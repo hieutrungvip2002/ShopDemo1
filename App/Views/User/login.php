@@ -1,8 +1,3 @@
-<?php
-$config = require 'config.php';
-$baseURL = $config['baseURL'];
-?>
-
 <?php include './App/Views/Layout/homeHeader.php'; ?>
 
 <div class="container mt-5 mb-5" style="max-width: 500px;">

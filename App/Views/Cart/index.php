@@ -29,22 +29,22 @@ include './App/Views/Layout/homeHeader.php';
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($cartItems as $item):
+                    <?php foreach ($cartItems as $item): 
                         $total = $item['Price'] * $item['quantity'];
                         $grandTotal += $total;
                     ?>
                         <tr>
                             <td><?= $item['Name'] ?></td>
-                            <td><?= number_format($item['Price'], 0) ?> USA</td>
+                            <td><?= number_format($item['Price'], 0) ?> VNĐ</td>
                             <td><?= $item['quantity'] ?></td>
-                            <td><?= number_format($total, 0) ?> USA</td>
+                            <td><?= number_format($total, 0) ?> VNĐ</td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
                 <tfoot>
                     <tr class="table-secondary">
                         <th colspan="3" class="text-end">Tổng cộng:</th>
-                        <th><?= number_format($grandTotal, 0) ?> USA</th>
+                        <th><?= number_format($grandTotal, 0) ?> VNĐ</th>
                     </tr>
                 </tfoot>
             </table>
